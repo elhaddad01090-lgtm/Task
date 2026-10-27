@@ -9,6 +9,10 @@
   --orange: #f59e0b;
 }
 
+.img-logo{
+  animation: float 6s infinite alternate;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: Arial, sans-serif; color: var(--dark); background: #fff; line-height: 1.6; }
@@ -94,4 +98,14 @@ footer { padding: 25px; text-align: center; background: var(--dark); color: #cbd
   .newsletter form { flex-direction: column; }
   input { width: 100%; }
   .section { padding: 40px 5%; }
+}
+
+@keyframes float{
+  0%{
+    translate: 0px -50px;
+  }
+
+  100%{
+    translate: 0px 0px;
+  }
 }
